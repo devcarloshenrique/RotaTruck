@@ -20,10 +20,26 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.rotatruck"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Show current location on map."
+        }
+      ],
+      [        
+        "@rnmapbox/maps",
+        {          
+          "RNMapboxMapsVersion": "11.0.0",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiZGV2Y2FybG9zaGVucmlxdWUiLCJhIjoiY21kNWd0cDc5MDZ5cjJrcHNkZ3duemRtNCJ9.87deCUdFAtouGyDW08uZLw"
+        }        
+      ]
+    ]
   }
 }
